@@ -40,7 +40,20 @@
   text-align: center;
   transition: transform 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+
+  height: 360px; /* Fixe une hauteur identique */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.fruit-card img {
+  max-height: 150px; /* Limite la hauteur de l'image */
+  width: auto;
+  margin: 0 auto 1rem auto;
+  object-fit: contain; /* Pour éviter la déformation */
+}
+
 
 .fruit-card:hover {
   transform: scale(1.05);
