@@ -1,0 +1,8 @@
+<div *ngIf="fruit" class="fruit-detail">
+  <h2>{{ fruit.name }}</h2>
+  <p><strong>Type :</strong> {{ fruit.type }}</p>
+  <p><strong>Description :</strong> {{ fruit.description }}</p>
+  <img [src]="fruit.filename" alt="{{ fruit.name }}" width="200" />
+  <br />
+  <a routerLink="/fruits">← Retour à la liste</a>
+</div>

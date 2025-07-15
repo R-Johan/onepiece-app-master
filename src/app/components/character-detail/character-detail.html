@@ -1,0 +1,24 @@
+<div *ngIf="character" class="character-detail">
+  <h2>{{ character.name }}</h2>
+  
+  <p><strong>Taille :</strong> {{ character.size }}</p>
+  <p><strong>Âge :</strong> {{ character.age }}</p>
+  <p><strong>Prime :</strong> {{ character.bounty }} Berrys</p>
+  <p><strong>Statut :</strong> {{ character.status }}</p>
+  <p><strong>Poste :</strong> {{ character.job }}</p>
+  
+  <h3>Équipage</h3>
+  <p><strong>Nom :</strong> {{ character.crew.name }}</p>
+  <p><strong>Statut :</strong> {{ character.crew.status }}</p>
+  <p><strong>Membres :</strong> {{ character.crew.number }}</p>
+  <p><strong>Yonkō :</strong> {{ character.crew.is_yonko ? 'Oui' : 'Non' }}</p>
+  
+  <h3>Fruit du Démon</h3>
+  <p><strong>Nom :</strong> {{ character.fruit.name }}</p>
+  <p><strong>Type :</strong> {{ character.fruit.type }}</p>
+  <p><strong>Description :</strong> {{ character.fruit.description }}</p>
+  <img [src]="character.fruit.filename" alt="{{ character.fruit.name }}" width="200" />
+  
+  <br />
+  <a routerLink="/characters">← Retour à la liste</a>
+</div>

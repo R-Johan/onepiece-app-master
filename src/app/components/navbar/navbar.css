@@ -1,0 +1,25 @@
+/* navbar.component.css */
+.navbar {
+  background: linear-gradient(90deg, #f4d35e, #ee964b);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  border-bottom: 4px solid #f95738;
+  font-family: 'Pirata One', cursive, serif;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2b2d42;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #f95738;
+  text-shadow: 0 0 10px #f95738;
+}

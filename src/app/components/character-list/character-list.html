@@ -1,0 +1,11 @@
+<div class="character-list-container">
+  <div class="characters">
+    <div *ngFor="let character of characters" class="character-card">
+      <h2>{{ character.name }}</h2>
+      <p><strong>Âge :</strong> {{ character.age }}</p>
+      <p><strong>Prime :</strong> {{ character.bounty ? (getCleanNumber(character.bounty) | number) : 'N/A' }}</p>
+      <p><strong>Équipage :</strong> {{ character.crew?.name }}</p>
+      <a [routerLink]="['/characters', character.id]" class="details-link">Voir détails</a>
+    </div>
+  </div>
+</div>

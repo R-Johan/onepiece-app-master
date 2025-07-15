@@ -1,0 +1,10 @@
+<div class="fruit-list-container">
+  <div class="fruits">
+    <div *ngFor="let fruit of fruits" class="fruit-card">
+      <h2>{{ fruit.name }}</h2>
+      <p><strong>Type :</strong> {{ fruit.type }}</p>
+      <img [src]="fruit.filename" alt="{{ fruit.name }}" width="150" />
+      <a [routerLink]="['/fruits', fruit.id]" class="details-link">Voir détails</a>
+    </div>
+  </div>
+</div>

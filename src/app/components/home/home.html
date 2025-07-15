@@ -1,0 +1,25 @@
+<div class="home-container">
+  <h1>Bienvenue sur OnePiece Explorer</h1>
+  <p>Explore les personnages et les fruits du Démon de l’univers One Piece.</p>
+
+  <div class="image-container">
+    <img src="https://upload.wikimedia.org/wikipedia/fr/3/34/One_Piece_%28ja%29_Logo.svg" alt="One Piece Logo" class="logo" />
+  </div>
+
+  <div class="home-links">
+    <a routerLink="/characters" class="btn">Voir les Personnages</a>
+    <a routerLink="/fruits" class="btn">Voir les Fruits</a>
+  </div>
+</div>
+
+<button
+  class="instagram-btn"
+  (click)="openInstagram()"
+  (keydown.enter)="openInstagram()"
+  tabindex="0"
+  aria-label="Suivez-moi sur Instagram"
+  title="Suivez-moi sur Instagram"
+>
+  <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+  <span class="btn-text">Instagram</span>
+</button>
